@@ -69,7 +69,21 @@ function TrainSchedule() {
                 <td className='select' >{train.trainNumber}</td>
                 <td className='select' >{`${train.departureTime.Hours}:${train.departureTime.Minutes}:${train.departureTime.Seconds}`}</td>
                 <td className='select' >
-                  Sleeper: {train.seatsAvailable.sleeper}, AC: {train.seatsAvailable.AC}
+                  {/* Sleeper: {train.seatsAvailable.sleeper}, AC: {train.seatsAvailable.AC} */}
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>Sleeper</th>
+                        <th>AC</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>{train.seatsAvailable.sleeper}</td>
+                        <td>{train.seatsAvailable.AC}</td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </td>
                 <td>
                   Sleeper: {train.price.sleeper}, AC: {train.price.AC}
