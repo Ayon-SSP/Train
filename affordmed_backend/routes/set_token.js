@@ -28,7 +28,7 @@ const renew_token = async () => {
 };
 
 
-router.get("/", async function (req, res, next) {
+router.get("/", async function (req, res) {
 
   if (!authorization_token || Math.floor(Date.now() / 1000) >= token_expire_by) {
     await renew_token();

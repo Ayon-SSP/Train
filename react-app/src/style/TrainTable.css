@@ -86,16 +86,6 @@ tfoot th {
     color: #b8c4d2;
 }
 
-.button {
-    line-height: 1;
-    display: inline-block;
-    font-size: 1.2rem;
-    text-decoration: none;
-    border-radius: 5px;
-    color: #fff;
-    padding: 8px;
-    background-color: #4b908f;
-}
 
 .select {
     padding-bottom: 20px;
@@ -155,25 +145,6 @@ dd {
     border-bottom: 1px solid #ac2647;
     box-shadow: 0 1px 0 #c52c51;
 }
-
-.close {
-    background: none;
-    padding: 18px;
-    color: #fff;
-    font-weight: 300;
-    border: 1px solid rgba(255, 255, 255, 0.4);
-    border-radius: 4px;
-    line-height: 1;
-    font-size: 1.8rem;
-    position: fixed;
-    right: 40px;
-    top: 20px;
-    -moz-transition: border 0.3s linear;
-    -o-transition: border 0.3s linear;
-    -webkit-transition: border 0.3s linear;
-    transition: border 0.3s linear;
-}
-
 @media (min-width: 460px) {
     td {
         text-align: left;
@@ -183,6 +154,9 @@ dd {
         display: inline-block;
         text-align: right;
         width: 140px;
+    }
+    .nameHead{
+        font-size: large;
     }
 
     .select {

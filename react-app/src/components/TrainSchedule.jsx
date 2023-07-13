@@ -49,28 +49,12 @@ function TrainSchedule() {
 
   return (
     <div>
-      {/* {trainData.length > 0 ? (
-        <ul>
-          {trainData.map(train => (
-            <li key={train.trainNumber}>
-              <h3>{train.trainName}</h3>
-              <p>Train Number: {train.trainNumber}</p>
-              <p>Departure Time: {train.departureTime.Hours}:{train.departureTime.Minutes}</p>
-              <p>Seats Available - Sleeper: {train.seatsAvailable.sleeper}, AC: {train.seatsAvailable.AC}</p>
-              <p>Price - Sleeper: {train.price.sleeper}, AC: {train.price.AC}</p>
-              <p>Delayed By: {train.delayedBy} minutes</p>
-            </li>
-          ))}
-        </ul>
-      ) : (
-        <p>Loading train schedule...</p>
-      )} */}
       <h1>Train Schedule</h1>
       <div className='maincss'>
         <table>
           <thead>
             <tr>
-              <th>Train Name</th>
+              <th className='nameHead'>Train Name</th>
               <th>Train Number</th>
               <th>Departure Time</th>
               <th>Seats Available</th>
