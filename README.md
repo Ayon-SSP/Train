@@ -39,10 +39,13 @@ Postman:
 ![image](https://github.com/Ayon-SSP/Train/assets/80549753/fde39375-bc5b-4904-82b0-5f9f285b377d)
 
 ### Desktop View:
-![image](https://github.com/Ayon-SSP/Train/assets/80549753/cab5ff7f-5faf-432a-ae0d-c9f3df10a935)
+![image](https://github.com/Ayon-SSP/Train/assets/80549753/16047c0c-8426-4ad4-810c-0c93f719ed55)
+
 
 ### Mobile View:
 ![image](https://github.com/Ayon-SSP/Train/assets/80549753/2deedd6a-c024-4dd8-9e70-3b4c2bc735de)
+![image](https://github.com/Ayon-SSP/Train/assets/80549753/ad3e00dc-bfc2-4a79-8395-4dfb557d51e9)
+
 
 
 <!-- ![image](https://github.com/Ayon-SSP/Train/assets/80549753/2bcd2544-f43d-471a-8c27-abb79b7c9f04)
