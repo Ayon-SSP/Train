@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import '../style/TrainTable.css';
 
 function TrainSchedule() {
   const [trainData, setTrainData] = useState([]);
@@ -198,8 +199,7 @@ function TrainSchedule() {
 
   return (
     <div>
-      <h2>Train Schedule</h2>
-      {trainData.length > 0 ? (
+      {/* {trainData.length > 0 ? (
         <ul>
           {trainData.map(train => (
             <li key={train.trainNumber}>
@@ -214,36 +214,38 @@ function TrainSchedule() {
         </ul>
       ) : (
         <p>Loading train schedule...</p>
-      )}
-      <h1>New</h1>
-      <table>
-        <thead>
-          <tr>
-            <th>Train Name</th>
-            <th>Train Number</th>
-            <th>Departure Time</th>
-            <th>Seats Available</th>
-            <th>Price</th>
-            <th>Delayed By (minutes)</th>
-          </tr>
-        </thead>
-        <tbody>
-          {trainData.map((train, index) => (
-            <tr key={index}>
-              <td>{train.trainName}</td>
-              <td>{train.trainNumber}</td>
-              <td>{`${train.departureTime.Hours}:${train.departureTime.Minutes}:${train.departureTime.Seconds}`}</td>
-              <td>
-                Sleeper: {train.seatsAvailable.sleeper}, AC: {train.seatsAvailable.AC}
-              </td>
-              <td>
-                Sleeper: {train.price.sleeper}, AC: {train.price.AC}
-              </td>
-              <td>{train.delayedBy}</td>
+      )} */}
+      <h1>Train Schedule</h1>
+      <div className='maincss'>
+        <table>
+          <thead>
+            <tr>
+              <th>Train Name</th>
+              <th>Train Number</th>
+              <th>Departure Time</th>
+              <th>Seats Available</th>
+              <th>Price</th>
+              <th>Delayed By (minutes)</th>
             </tr>
-          ))}
-        </tbody>
-      </table>
+          </thead>
+          <tbody>
+            {trainData.map((train, index) => (
+              <tr key={index}>
+                <td className='select' >{train.trainName}</td>
+                <td className='select' >{train.trainNumber}</td>
+                <td className='select' >{`${train.departureTime.Hours}:${train.departureTime.Minutes}:${train.departureTime.Seconds}`}</td>
+                <td className='select' >
+                  Sleeper: {train.seatsAvailable.sleeper}, AC: {train.seatsAvailable.AC}
+                </td>
+                <td>
+                  Sleeper: {train.price.sleeper}, AC: {train.price.AC}
+                </td>
+                <td>{train.delayedBy}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
     </div>
   );
 }
